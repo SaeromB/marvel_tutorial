@@ -37,33 +37,6 @@ class App extends Component {
     )
   }
 }
-  // state ={
-  //   charactersInfo:[]
-  // }
 
-//   async componentDidMount(){
-//     try {
-//       const res = await fetch('http://gateway.marvel.com/v1/public/characters?ts=1&apikey=5d2cbb76e14fbe42f05ec010936c4542&hash=ffe8962d76a12c5db0198cd0c503fa6c');
-//       const charactersInfo = await res.json();
-//       console.log(charactersInfo)
-//       this.setState({
-//         charactersInfo:charactersInfo.results,
-//       })
-//     } catch(e){
-//       console.log(e);
-//     }
-//   }
-
-//   render() {
-//     return (
-//       <div className="App">
-//         <header className="App-header">
-//           <img src={logo} className="App-logo" alt="logo" />
-//         </header>
-//         {this.state.charactersInfo.map(marvelcharacter=><MarvelCharacter key={marvelcharacter.id} marvelcharacter={marvelcharacter}/>)}
-//       </div>
-//     );
-//   }
-// }
 
 export default App;
