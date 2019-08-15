@@ -10,6 +10,7 @@ import React from 'react';
 import {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Character from './Character';
 
 class App extends Component {
   state = {
@@ -26,13 +27,23 @@ class App extends Component {
     this.getCharacters();
   }
   render(){
-    const {isLoading} = this.state;
+    const {isLoading,characters} = this.state;
     return(
       <div className="App">
         <header className="App-header">
            <img src={logo} className="App-logo" alt="logo" />
-         </header>
-      <div>{isLoading ? 'Loading...': 'Ready'}</div>
+        </header>
+        <div>{isLoading ? 'Loading...': characters.map(character=>{
+        console.log(character);
+        // always return something after map
+        return <Character
+                id={character.id}
+                name={character.name}
+                description={character.description}
+                thumbnail={character.thumbnail}
+                comics={character.comics}/>}
+        )}
+        </div>
       </div>
     )
   }

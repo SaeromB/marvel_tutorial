@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 
 function Character({id, name, description, thumbnail, comics}){
-    return <h1></h1>
+    return <h1>{name}</h1>
 }
 
 Character.propTypes = {
