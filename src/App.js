@@ -37,6 +37,7 @@ class App extends Component {
         console.log(character);
         // always return something after map
         return <Character
+                key={character.id}
                 id={character.id}
                 name={character.name}
                 description={character.description}
