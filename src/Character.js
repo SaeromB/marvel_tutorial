@@ -1,8 +1,17 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 
-function Character({id, name, description, thumbnail, comics}){
-    return <h1>{name}</h1>
+const Character=({id, name, description, thumbnail, comics})=>{
+    return(
+        <div className='character'>
+            <img src={thumbnail} alt={name}/>
+            <div className='character_data'>
+                <h1 className='character_name'>{name}</h1>
+                <h2 className='character_description'>{description}</h2>
+                <img src={`${(thumbnail.path)+'/portrait_xlarge.jpg'}`} alt={Character.name}/>
+            </div>
+        </div>
+    )
 }
 
 Character.propTypes = {

@@ -34,7 +34,7 @@ class App extends Component {
            <img src={logo} className="App-logo" alt="logo" />
         </header>
         <div>{isLoading ? 'Loading...': characters.map(character=>{
-        console.log(character);
+        // console.log(character);
         // always return something after map
         return <Character
                 key={character.id}
