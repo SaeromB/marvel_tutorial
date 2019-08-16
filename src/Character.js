@@ -8,7 +8,7 @@ const Character=({id, name, description, thumbnail, comics})=>{
             <div className='character_data'>
                 <h1 className='character_name'>{name}</h1>
                 <h2 className='character_description'>{description}</h2>
-                <img src={`${(thumbnail.path)+'/portrait_xlarge.jpg'}`} alt={Character.name}/>
+                <img src={`${(thumbnail.path)+'/portrait_xlarge.jpg'}`}/>
             </div>
         </div>
     )

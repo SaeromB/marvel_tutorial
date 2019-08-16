@@ -11,6 +11,7 @@ import {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Character from './Character';
+import SearchBar from './SearchBar';
 
 class App extends Component {
   state = {
@@ -33,6 +34,7 @@ class App extends Component {
         <header className="App-header">
            <img src={logo} className="App-logo" alt="logo" />
         </header>
+        <SearchBar/>
         <div>{isLoading ? 'Loading...': characters.map(character=>{
         // console.log(character);
         // always return something after map
