@@ -3,6 +3,7 @@ import {BrowserRouter as Router, Route, Switch, Link} from 'react-router-dom';
 import logo from './logo.svg';
 import './App.css';
 import CharacterList from './CharacterList';
+import CharacterDetail from './CharacterDetail';
 
 const App = () => (
   <Router>
@@ -14,7 +15,7 @@ const App = () => (
       </header>
       <Switch>
         <Route exact path="/" component={CharacterList}/>
-        <Route path="/:id" component={test}/>
+        <Route path="/:id" component={CharacterDetail}/>
       </Switch>
     </div>
   </Router>
@@ -23,6 +24,3 @@ const App = () => (
 
 export default App;
 
-const test = ({match}) => (
-  <h1>{match.params.id}</h1>
-);
