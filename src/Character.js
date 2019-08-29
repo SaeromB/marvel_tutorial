@@ -1,3 +1,4 @@
+
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 import PropTypes from 'prop-types';
@@ -5,9 +6,10 @@ import PropTypes from 'prop-types';
 const Character=({id, name, description, thumbnail, comics})=>{
     return(
         <div>
-            <Link to = '/test'>
+            <Link to = {`/${id}`}>
             <h1 className='character_name'>{name}</h1>
             <img src={`${(thumbnail.path)+'/portrait_xlarge.jpg'}` } alt={Character.name}/>
+            {/* <img src={`${thumbnail.path}.${thumbnail.extension})`} alt={Character.name}></img> */}
             </Link>
         </div>
     )
@@ -22,4 +24,3 @@ Character.propTypes = {
 }
 
 export default Character;
-

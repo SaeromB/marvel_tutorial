@@ -1,11 +1,14 @@
+
 import React, {Component} from 'react';
 import Character from './Character';
 
 
-class CharacterList extends Component {
+class CharacterDetail extends Component {
   state = {
     isLoading: true,
     characters: [],
+    selectedCharacterUrl: null,
+    selectedCharacterData: null,
   };
 
   getCharacters= async()=>{
@@ -29,6 +32,8 @@ class CharacterList extends Component {
                   id={character.id}
                   name={character.name}
                   thumbnail={character.thumbnail}
+                  description={character.description}
+                  comics={character.comicsName}
                   />}
           )}
           </div>
@@ -37,4 +42,7 @@ class CharacterList extends Component {
 }
 
 
-export default CharacterList;
+export default CharacterDetail;
+
+
+
