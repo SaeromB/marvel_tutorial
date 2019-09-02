@@ -6,11 +6,10 @@ const Character=({id, name, description, thumbnail, comics})=>{
     return(
         <div>
             <Link to = {`/${id}`}>
-            <h1 className='character_name'>{name}</h1>
-            <img src={`${(thumbnail.path)+'/portrait_xlarge.jpg'}` } alt={name}/>
-            {/* <img src={`${thumbnail.path}.${thumbnail.extension})`} alt={Character.name}></img> */}
-            <p>{description}</p>
-            <p>{comics}</p>
+            <h1>{name}</h1>
+            <img src={`${thumbnail.path}/portrait_medium.${thumbnail.extension}` } alt={name}/>
+            {/* <p>{description}</p>
+            <p>{comics}</p> */}
             </Link>
         </div>
     )
@@ -21,7 +20,7 @@ Character.propTypes = {
     name:PropTypes.string.isRequired,
     description:PropTypes.string.isRequired,
     thumbnail:PropTypes.object.isRequired,
-    comics:PropTypes.string.isRequired,
+    comics:PropTypes.object.isRequired,
 }
 
 export default Character;
