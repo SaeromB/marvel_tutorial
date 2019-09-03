@@ -37,14 +37,11 @@ class CharacterList extends Component {
               key={id} 
               id={id} 
               name={name} 
-              thumbnail={thumbnail}
-              description={description}
-              comics = {comics}
-          />
-          )
+              thumbnail={thumbnail}/>
+            )
         })}
-        </div>
-      );
+      </div>
+    );
   }
 }
 

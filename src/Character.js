@@ -8,8 +8,8 @@ const Character=({id, name, description, thumbnail, comics})=>{
             <Link to = {`/${id}`}>
             <h1>{name}</h1>
             <img src={`${thumbnail.path}/portrait_medium.${thumbnail.extension}` } alt={name}/>
-            {/* <p>{description}</p>
-            <p>{comics}</p> */}
+            <p>{description}</p>
+            <p>{comics}</p> 
             </Link>
         </div>
     )
