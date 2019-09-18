@@ -1,6 +1,0 @@
-// Your public key
-// 5d2cbb76e14fbe42f05ec010936c4542
-// privet key
-// 08f7652ab7a4c12c623122ab6ff8bb6498b13867
-// fetch key
-// 108f7652ab7a4c12c623122ab6ff8bb6498b138675d2cbb76e14fbe42f05ec010936c4542

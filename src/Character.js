@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import {Link} from 'react-router-dom';
 import PropTypes from 'prop-types';
 
@@ -9,7 +9,7 @@ const Character=({id, name, description, thumbnail, comics})=>{
             <h1>{name}</h1>
             <img src={`${thumbnail.path}/portrait_medium.${thumbnail.extension}` } alt={name}/>
             <p>{description}</p>
-            <p>{comics}</p> 
+            {/* <p>{comics}</p>  */}
             </Link>
         </div>
     )

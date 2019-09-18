@@ -24,7 +24,7 @@ class CharacterDetail extends Component {
     return(
       <div>
         {characters.map(character => {
-          const { id, name, thumbnail, description, comics } = character;
+          const { id, name, thumbnail, description } = character;
           return (
             <Character
               key={id} 
@@ -32,7 +32,6 @@ class CharacterDetail extends Component {
               name={name} 
               thumbnail={thumbnail}
               description={description}
-              // comics = {comics.toString()}
             />
           )
         })}

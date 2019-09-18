@@ -25,13 +25,14 @@ class CharacterList extends Component {
       characters:results
     });
   }
+
   
   render(){
     const {characters} = this.state
     return(
       <div>
         {characters.map(character => {
-          const { id, name, thumbnail, description, comics } = character;
+          const { id, name, thumbnail } = character;
           return (
             <Character
               key={id} 
