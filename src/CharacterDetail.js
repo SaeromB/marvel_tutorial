@@ -1,5 +1,8 @@
 import React, {Component} from 'react';
 import Character from './Character';
+require('dotenv').config()
+
+
 
 
 class CharacterDetail extends Component {

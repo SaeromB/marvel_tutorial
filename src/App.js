@@ -1,14 +1,16 @@
-import React, {Component} from 'react';
+import React from 'react';
 import {BrowserRouter as Router, Route, Switch, Link} from 'react-router-dom';
 import logo from './logo.svg';
 import './App.css';
 import CharacterList from './CharacterList';
 import CharacterDetail from './CharacterDetail';
+require('dotenv').config()
 
 
-const App = () => (
-  <Router>
-    <div className="App">
+function App () {
+  return(
+  <div className="App">
+    <Router>
       <header className="App-header">
         <Link to = "/">
           <img src={logo} className="App-logo" alt="logo" />
@@ -18,9 +20,9 @@ const App = () => (
           <Route exact path="/" component={CharacterList}/>
           <Route path="/:id" component={CharacterDetail}/>
         </Switch>
-    </div>
-  </Router>
-);
+    </Router>
+  </div>
+  )};
 
 
 export default App;
