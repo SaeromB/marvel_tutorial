@@ -3,7 +3,6 @@ import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Header from './Header';
 import CharacterList from './CharacterList';
 import CharacterDetail from './CharacterDetail';
-import CharacterCards from './CharacterCards';
 
 
 class App extends Component {
@@ -21,7 +20,6 @@ class App extends Component {
     )
   }
 }
-
 
 export default App;
 

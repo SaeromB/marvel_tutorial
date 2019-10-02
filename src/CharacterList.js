@@ -4,7 +4,6 @@ import CharacterCards from './CharacterCards'
 import API_KEY from './config'
 
 
-
 class CharacterList extends Component {
   state = {
     isLoading: true,
@@ -27,7 +26,6 @@ class CharacterList extends Component {
     });
   }
 
-  
   render(){
     const {characters} = this.state
     return(
@@ -40,7 +38,7 @@ class CharacterList extends Component {
               id={id} 
               name={name} 
               thumbnail={thumbnail}/>
-            )
+              )
         })}
       </Wrapper>
     );
@@ -52,6 +50,7 @@ const Wrapper = styled.div`
     width: 50%;
     height: 50%;
     display: center;
+    border-radius: 1px;
   }
 `;
 

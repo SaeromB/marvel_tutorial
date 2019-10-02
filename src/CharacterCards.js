@@ -9,7 +9,7 @@ function CharacterCards({id, name, thumbnail}) {
         <Wrapper>
             <Link to = {`/${id}`}>
                 <h5>{name}</h5>
-                <img src={`${thumbnail.path}/portrait_medium.${thumbnail.extension}` } alt={name}/>
+                <img src={`${thumbnail.path}/portrait_incredible.${thumbnail.extension}`} alt={name}/>
                 <button>
                     Click for more information 
                 </button>
@@ -21,9 +21,7 @@ function CharacterCards({id, name, thumbnail}) {
 CharacterCards.propTypes = {
     id:PropTypes.number.isRequired,
     name:PropTypes.string.isRequired,
-    description:PropTypes.string.isRequired,
     thumbnail:PropTypes.object.isRequired,
-    comics:PropTypes.object.isRequired,
 }
 
 export default CharacterCards;

@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import styled from 'styled-components';
 import API_KEY from './config'
 import CharacterCard from './CharacterCard';
 
@@ -24,7 +25,7 @@ class CharacterDetail extends Component {
   render(){
     const {characters} = this.state
     return(
-      <div>
+      <Wrapper>
         {characters.map(character => {
           const {id, name, thumbnail, description, comics} = character;
           return (
@@ -39,9 +40,19 @@ class CharacterDetail extends Component {
           )
         })}
         }
-      </div>
+      </Wrapper>
     );
   };
 }
+
+const Wrapper = styled.div`
+  img {
+    margin: auto 0;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+}
+
+`;
 
 export default CharacterDetail;
