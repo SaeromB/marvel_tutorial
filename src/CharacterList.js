@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import styled from 'styled-components';
-import Character from './Character';
+import CharacterCards from './CharacterCards'
 import API_KEY from './config'
 
 
@@ -35,7 +35,7 @@ class CharacterList extends Component {
         {characters.map(character => {
           const { id, name, thumbnail } = character;
           return (
-            <Character
+            <CharacterCards
               key={id} 
               id={id} 
               name={name} 
@@ -48,15 +48,11 @@ class CharacterList extends Component {
 }
 
 const Wrapper = styled.div`
-// overflow: hidden;
-padding: 0 0 32px;
-margin: 48px auto 0;
-width: 500px;
-font-family: Quicksand, arial, sans-serif;
-box-shadow: 0 0 20px rgba(0, 0, 0, .05), 0 0px 40px rgba(0, 0, 0, .08);
-border-radius: 5px;
-
-}
+  img {
+    width: 50%;
+    height: 50%;
+    display: center;
+  }
 `;
 
 

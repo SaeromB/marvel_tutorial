@@ -22,7 +22,7 @@ function CharacterCard ({id, name, thumbnail, description, comics}) {
                         {comics.items[index].name}
                     </li>
                 )
-            })}
+                })}
         </Wrapper>
     )
 }
@@ -32,6 +32,4 @@ const Wrapper = styled.div`
 
 `
 
-const Image = styled.div`
 
-`

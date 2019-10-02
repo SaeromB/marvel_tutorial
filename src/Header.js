@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import {withRouter, Link, Router} from 'react-router-dom';
+import {withRouter, Link} from 'react-router-dom';
 import logo from './logo.svg';
 import { GlobalStyle } from './global-styles';
 
